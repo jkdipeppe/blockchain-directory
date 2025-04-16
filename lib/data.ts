@@ -987,7 +987,7 @@ export const projects: Project[] = [
       "Hyperliquid is a decentralized order book perpetual futures exchange built on its own Layer 1 blockchain (Hyperliquid L1). It offers fast, transparent trading with low fees.",
     logo: "/project-logos/hyperliquid.png", // Placeholder logo path
     website: "https://app.hyperliquid.xyz/",
-    blockchains: ["Hyperliquid L1"],
+    blockchains: ["Hyperliquid"],
     categories: ["DeFi", "Derivatives", "Exchange", "Infrastructure"],
     status: "Live",
     featured: true,
