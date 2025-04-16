@@ -19,21 +19,23 @@ export default function HomePage({ searchParams }: HomePageProps) {
 
   return (
     <div className="container px-4 py-10 mx-auto max-w-7xl">
-      <div className="flex justify-between items-start pt-6 pb-8 md:pt-10 md:pb-12">
+      <div className="flex justify-between items-start pt-6 pb-4 md:pt-5 md:pb-6">
         <PageHeader
-          title="Blockchain Ecosystem Directory"
+          title="Web3 Ecosystem Directory"
           description="Discover and explore projects across multiple blockchain ecosystems"
         />
         <Link href="/events" passHref className="mt-1">
-          <Button variant="outline">IRL Events</Button>
+          <Button /*variant="outline"*/ className="bg-secondary-accent/50 text-secondary-foreground hover:bg-secondary-accent/50">
+            IRL Events
+          </Button>
         </Link>
       </div>
 
       <section className="mt-8">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold">Featured Projects</h2>
+          <h2 className="text-2xl font-bold text-zinc-400">Featured Projects</h2>
           <Link href="/directory">
-            <Button variant="outline" className="gap-2">
+            <Button /*variant="outline"*/ className="gap-2 bg-secondary-accent/50 text-secondary-foreground hover:bg-secondary-accent/50">
               View All Projects
               <ArrowRight className="w-4 h-4" />
             </Button>

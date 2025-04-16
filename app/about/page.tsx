@@ -12,14 +12,14 @@ export default function AboutPage() {
           the complex and rapidly evolving blockchain landscape.
         </p>
 
-        <h2>Our Mission</h2>
+        <h2 className="text-zinc-400">Our Mission</h2>
         <p>
           We aim to create the most comprehensive, up-to-date, and user-friendly directory of blockchain projects. By
           categorizing projects across different blockchains and use cases, we help users discover innovative solutions
           and stay informed about the latest developments in the blockchain space.
         </p>
 
-        <h2>Features</h2>
+        <h2 className="text-zinc-400">Features</h2>
         <ul>
           <li>Browse projects across multiple blockchains including Solana, Ethereum, Base, and Avalanche</li>
           <li>Filter by categories such as DeFi, Payments, Oracles, Consumer, Gaming, and more</li>
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <li>Search for specific projects or keywords</li>
         </ul>
 
-        <h2>Contact</h2>
+        <h2 className="text-zinc-400">Contact</h2>
         <p>
           Want to get a project listed? Fill out this <a href="https://forms.gle/h6z8zZo9TbUQ895e8" target="_blank">directory form!</a>.
         </p>

@@ -24,7 +24,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const handleMouseEnter = () => {
     const timeout = setTimeout(() => {
       setShowFullDescription(true)
-    }, 1000) // 2 second delay
+    }, 500) // 2 second delay
     setHoverTimeout(timeout)
   }
 
@@ -49,7 +49,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       ref={cardRef}
-      className="overflow-hidden transition-all border rounded-lg hover:shadow-md"
+      className="group overflow-hidden transition-all border rounded-lg hover:shadow-md hover:border-secondary-accent"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -65,7 +65,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               />
             </div>
             <div>
-              <h3 className="font-medium">{project.title}</h3>
+              <h3 className="font-medium group-hover:text-bold group-hover:text-secondary-accent transition-colors">{project.title}</h3>
               <p className="text-sm text-muted-foreground">{project.subtitle}</p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+              className="p-1.5 text-secondary-accent hover:bg-secondary-accent/20 rounded-full transition-colors"
             >
               <Twitter className="w-4 h-4" />
               <span className="sr-only">Twitter</span>
@@ -107,7 +107,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.discord}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+              className="p-1.5 text-secondary-accent hover:bg-secondary-accent/20 rounded-full transition-colors"
             >
               <MessageSquare className="w-4 h-4" />
               <span className="sr-only">Discord</span>
@@ -118,7 +118,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.telegram}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+              className="p-1.5 text-secondary-accent hover:bg-secondary-accent/20 rounded-full transition-colors"
             >
               <Share2 className="w-4 h-4" />
               <span className="sr-only">Telegram</span>
@@ -129,7 +129,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+              className="p-1.5 text-secondary-accent hover:bg-secondary-accent/20 rounded-full transition-colors"
             >
               <Github className="w-4 h-4" />
               <span className="sr-only">GitHub</span>
@@ -140,7 +140,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-full transition-colors"
+              className="p-1.5 text-secondary-accent hover:bg-secondary-accent/20 rounded-full transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
               <span className="sr-only">Website</span>
@@ -150,12 +150,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.blockchains.map((blockchain) => (
-            <Badge key={blockchain} variant="outline" className="text-xs">
+            <Badge key={blockchain} className="text-xs bg-secondary-accent/50 text-primary-foreground">
               {blockchain}
             </Badge>
           ))}
           {project.categories.map((category) => (
-            <Badge key={category} variant="secondary" className="text-xs">
+            <Badge key={category} className="text-xs bg-secondary-accent/50 text-primary-foreground">
               {category}
             </Badge>
           ))}
@@ -168,7 +168,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 className={cn(
                   "w-2 h-2 rounded-full",
                   project.status === "Live"
-                    ? "bg-green-500"
+                    ? "bg-highlight"
                     : project.status === "Beta"
                       ? "bg-yellow-500"
                       : "bg-blue-500",
@@ -180,7 +180,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" asChild>
+            <Button variant="ghost" size="sm" className="hover:text-tertiary-accent/90" asChild>
               <Link href={`/directory/${project.id}`}>Details</Link>
             </Button>
           </div>

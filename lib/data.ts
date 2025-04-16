@@ -213,7 +213,7 @@ export const projects: Project[] = [
     title: "Hedgehog Markets",
     subtitle: "Prediction Markets",
     description:
-      "Hedgehog Markets is a prediction market protocol built on Solana. It allows users to predict the outcome of events and earn rewards by correctly predicting the outcome.",
+      "Hedgehog Markets is a prediction market protocol built on Solana where users can bet on the outcome of events. Their Versus markets are a new P2P style of betting where users can set the odds and size for anything and funds are escrowed on chain.",
     logo: "/project-logos/hedgehog.png",
     website: "https://hedgehog.markets",
     blockchains: ["Solana"],

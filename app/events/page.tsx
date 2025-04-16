@@ -249,7 +249,7 @@ export default function EventsPage() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Events List</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-zinc-400">Events List</h2>
         {filteredEvents.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Map over FILTERED events */}

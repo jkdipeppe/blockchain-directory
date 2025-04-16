@@ -50,7 +50,7 @@ export function SiteHeader() {
               href={route.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-foreground/80",
-                route.active ? "text-foreground" : "text-foreground/60",
+                route.active ? "text-primary-accent" : "text-foreground/60",
               )}
             >
               {route.label}
@@ -61,7 +61,11 @@ export function SiteHeader() {
         <div className="flex items-center justify-end flex-1 space-x-4">
           <div className="relative hidden w-full max-w-sm lg:flex">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-            <Input type="search" placeholder="Search projects..." className="pl-8" />
+            <Input
+              type="search"
+              placeholder="Search projects..."
+              className="pl-8 focus:border-primary-accent"
+            />
           </div>
 
           <ThemeToggle />
@@ -81,7 +85,7 @@ export function SiteHeader() {
                     href={route.href}
                     className={cn(
                       "text-lg font-medium transition-colors hover:text-foreground/80",
-                      route.active ? "text-foreground" : "text-foreground/60",
+                      route.active ? "text-primary-accent" : "text-foreground/60",
                     )}
                   >
                     {route.label}

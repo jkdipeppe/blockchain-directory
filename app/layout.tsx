@@ -13,7 +13,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Blockchain Ecosystem Directory",
+  title: "Web3 Ecosystem Directory",
   description: "Discover and explore projects across multiple blockchain ecosystems",
   keywords: [
     "blockchain",

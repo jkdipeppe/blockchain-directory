@@ -53,6 +53,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'primary-accent': 'hsl(var(--primary-accent))',
+        'secondary-accent': 'hsl(var(--secondary-accent))',
+        'tertiary-accent': 'hsl(var(--tertiary-accent))',
+        highlight: 'hsl(var(--highlight))',
       },
       borderRadius: {
         lg: "var(--radius)",
