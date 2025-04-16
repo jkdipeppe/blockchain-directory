@@ -1282,6 +1282,37 @@ export const projects: Project[] = [
     github: "",
     features: ["Decentralized Exchange"],
   },
+  // Add Solana Spaces
+  {
+    id: "solana-spaces",
+    title: "Solana Spaces",
+    subtitle: "Retail & Online Solana Activations",
+    description:
+      "Solana Spaces operates physical pop-up stores and online e-commerce focused on onboarding users and showcasing Solana ecosystem projects and merchandise.",
+    logo: "/project-logos/solanaspaces.jpg", // Placeholder logo
+    website: "https://solanaspaces.com/", // Found via web search
+    blockchains: ["Solana"],
+    categories: ["Consumer", "Infrastructure", "Retail", "Education"],
+    status: "Live", // Assuming active based on Twitter
+    featured: false,
+    tvl: "N/A",
+    funding: "", // Funding info not readily available
+    launchDate: "Jul 2022", // Approx. based on initial store opening
+    hasToken: true,
+    tokenSymbol: "STORE",
+    twitter: "https://x.com/solanaspaces",
+    telegram: "t.me/SolanaSpacesBot", 
+    discord: "", 
+    github: "", // GitHub link not readily available
+    features: [
+      "Physical Retail Stores (Pop-ups)",
+      "Online E-commerce Store",
+      "User Onboarding",
+      "Ecosystem Project Showcasing",
+      "Solana Merchandise",
+      "Community Events",
+    ],
+  },
 ]
 
 // Get featured projects
