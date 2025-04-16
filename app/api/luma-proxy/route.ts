@@ -25,7 +25,6 @@ export async function GET(request: NextRequest) {
   try {
     // Fetch directly from the server-side - no CORS issues here
     // Remove the mode: 'no-cors' as we need the response body now
-    console.log('lumaUrl', lumaUrl);
     const response = await fetch(lumaUrl);
 
     if (!response.ok) {
@@ -42,7 +41,6 @@ export async function GET(request: NextRequest) {
                      $('meta[name="twitter:image"]').attr('content') ||
                      'https://default-image-url.com/fallback.jpg';
     
-    console.log('imageUrl', imageUrl);
     // Return the image URL as a plain string
     return new NextResponse(imageUrl, {
       status: 200, // Indicate success
