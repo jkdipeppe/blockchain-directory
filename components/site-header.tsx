@@ -25,6 +25,11 @@ export function SiteHeader() {
       active: pathname === "/directory" || pathname.startsWith("/directory/"),
     },
     {
+      href: "/events",
+      label: "Events",
+      active: pathname === "/events" || pathname.startsWith("/events/"),
+    },
+    {
       href: "/about",
       label: "About",
       active: pathname === "/about",
