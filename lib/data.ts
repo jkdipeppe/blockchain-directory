@@ -1,4 +1,4 @@
-import type { Blockchain, Category, FilterOptions, Project, SortOption } from "./types"
+import type { Blockchain, Category, FilterOptions, Project, SortOption, Event } from "./types"
 // Blockchain data
 export const blockchains: Blockchain[] = [
   { id: "solana", name: "Solana" },
@@ -1410,3 +1410,202 @@ export function getBlockchainStats() {
 
   return stats
 }
+
+// --- Event Data ---
+
+const eventsData: Event[] = [
+  {
+    id: "1",
+    title: "Solana Across America (Calendar)",
+    date: "April 2025",
+    location: "USA",
+    lumaUrl: "https://lu.ma/solanamerica",
+    state: undefined,
+    country: "USA",
+    lat: 39.8283, // Placeholder USA center
+    lon: -98.5795, // Placeholder USA center
+  },
+  {
+    id: "chicago",
+    title: "Solana Across America — CHICAGO",
+    date: "April 23rd, 2025",
+    location: "Chicago, Illinois",
+    lumaUrl: "https://lu.ma/cj2e58nb",
+    state: "IL",
+    country: "USA",
+    lat: 41.8781, // Placeholder Chicago
+    lon: -87.6298, // Placeholder Chicago
+  },
+  {
+    id: "dc",
+    title: "Solana Across America — WASHINGTON DC",
+    date: "April 23rd 2025",
+    location: "Arlington, VA",
+    lumaUrl: "https://lu.ma/solanamerica_DC",
+    state: "VA",
+    country: "USA",
+    lat: 38.8951, // Placeholder DC area
+    lon: -77.0369, // Placeholder DC area
+  },
+  {
+    id: "nyc",
+    title: "Solana Across America — NYC",
+    date: "April 23rd, 2025",
+    location: "New York, New York",
+    lumaUrl: "https://lu.ma/solanamerica_nyc",
+    state: "NY",
+    country: "USA",
+    lat: 40.7128, // Placeholder NYC
+    lon: -74.0060, // Placeholder NYC
+  },
+  {
+    id: "philly",
+    title: "Solana Across America — Philadelphia",
+    date: "April 23rd, 2025",
+    location: "Philadelphia, PA (Register for Location)",
+    lumaUrl: "https://lu.ma/solanamerica_philly",
+    state: "PA",
+    country: "USA",
+    lat: 39.9526, // Placeholder Philly
+    lon: -75.1652, // Placeholder Philly
+  },
+  {
+    id: "kentucky",
+    title: "Solana Across America — KENTUCKY",
+    date: "April 23rd, 2025",
+    location: "Kentucky (The LongTail Building)",
+    lumaUrl: "https://lu.ma/solanamerica_kentucky",
+    state: "KY",
+    country: "USA",
+    lat: 37.8393, // Placeholder Kentucky
+    lon: -84.2700, // Placeholder Kentucky
+  },
+  {
+    id: "boston",
+    title: "Solana Across America — BOSTON",
+    date: "April 23rd, 2025",
+    location: "Boston, MA (Industrious)",
+    lumaUrl: "https://lu.ma/solanamerica_boston",
+    state: "MA",
+    country: "USA",
+    lat: 42.3601, // Placeholder Boston
+    lon: -71.0589, // Placeholder Boston
+  },
+  {
+    id: "miami",
+    title: "Solana Across America — MIAMI",
+    date: "April 23rd, 2025",
+    location: "Miami, Florida",
+    lumaUrl: "https://lu.ma/solanamerica_miami",
+    state: "FL",
+    country: "USA",
+    lat: 25.7617, // Placeholder Miami
+    lon: -80.1918, // Placeholder Miami
+  },
+  {
+    id: "houston",
+    title: "Solana Across America — HOUSTON",
+    date: "April 23rd, 2025",
+    location: "Houston, TX (Cedar Creek)",
+    lumaUrl: "https://lu.ma/solanamerica_houston",
+    state: "TX",
+    country: "USA",
+    lat: 29.7604, // Placeholder Houston
+    lon: -95.3698, // Placeholder Houston
+  },
+  {
+    id: "west-texas",
+    title: "Solana Across America — WEST TEXAS",
+    date: "April 23rd, 2025",
+    location: "West Texas (TBA)",
+    lumaUrl: "https://lu.ma/solanamerica_westtexas",
+    state: "TX",
+    country: "USA",
+    lat: 31.9686, // Placeholder West Texas
+    lon: -99.9018, // Placeholder West Texas
+  },
+  {
+    id: "dallas",
+    title: "Solana Across America — DALLAS",
+    date: "April 23rd, 2025",
+    location: "Dallas, TX (Cowboys Club)",
+    lumaUrl: "https://lu.ma/solanamerica_dallas",
+    state: "TX",
+    country: "USA",
+    lat: 32.7767, // Placeholder Dallas
+    lon: -96.7970, // Placeholder Dallas
+  },
+  {
+    id: "denver",
+    title: "Solana Across America — DENVER",
+    date: "April 23rd, 2025",
+    location: "Denver, CO (TBA)",
+    lumaUrl: "https://lu.ma/solanamerica_denver",
+    state: "CO",
+    country: "USA",
+    lat: 39.7392, // Placeholder Denver
+    lon: -104.9903, // Placeholder Denver
+  },
+  {
+    id: "seattle",
+    title: "Solana Across America — SEATTLE",
+    date: "April 23rd, 2025",
+    location: "Seattle, WA (Niftmint)",
+    lumaUrl: "https://lu.ma/v8ydyt4g",
+    state: "WA",
+    country: "USA",
+    lat: 47.6062, // Placeholder Seattle
+    lon: -122.3321, // Placeholder Seattle
+  },
+  {
+    id: "vegas",
+    title: "Solana Across America — LAS VEGAS",
+    date: "April 23rd, 2025",
+    location: "Las Vegas, NV",
+    lumaUrl: "https://lu.ma/solanamerica_lasvegas",
+    state: "NV",
+    country: "USA",
+    lat: 36.1699, // Placeholder Vegas
+    lon: -115.1398, // Placeholder Vegas
+  },
+  {
+    id: "sf",
+    title: "Solana Across America — SAN FRANCISCO",
+    date: "April 23rd, 2025",
+    location: "San Francisco, CA (TBA)",
+    lumaUrl: "https://lu.ma/solanamerica_sanfran",
+    state: "CA",
+    country: "USA",
+    lat: 37.7749, // Placeholder SF
+    lon: -122.4194, // Placeholder SF
+  },
+  {
+    id: "portland",
+    title: "Solana Across America — Portland",
+    date: "April 23rd, 2025",
+    location: "Portland, OR (TBA)",
+    lumaUrl: "https://lu.ma/solanamerica_portland",
+    state: "OR",
+    country: "USA",
+    lat: 45.5051, // Placeholder Portland
+    lon: -122.6750, // Placeholder Portland
+  },
+  {
+    id: "la",
+    title: "tidalDAO: The Swell, Wave IV x Solana Across America",
+    date: "April 23rd, 2025",
+    location: "Los Angeles County, California",
+    lumaUrl: "https://lu.ma/osv8nalb",
+    state: "CA",
+    country: "USA",
+    lat: 34.0522, // Placeholder LA
+    lon: -118.2437, // Placeholder LA
+  },
+];
+
+export function getEvents(): Event[] {
+  // In a real app, you might fetch this data from an API
+  return eventsData;
+}
+
+// --- End Event Data ---

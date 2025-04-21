@@ -30,6 +30,11 @@ export function SiteHeader() {
       active: pathname === "/events" || pathname.startsWith("/events/"),
     },
     {
+      href: "/events/map",
+      label: "Event Map",
+      active: pathname === "/events/map",
+    },
+    {
       href: "/about",
       label: "About",
       active: pathname === "/about",

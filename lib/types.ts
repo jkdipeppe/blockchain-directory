@@ -53,3 +53,15 @@ export interface FilterOptions {
   search: string
   sort: string
 }
+
+export interface Event {
+  id: string;
+  title: string;
+  date: string;
+  location: string;
+  lumaUrl: string;
+  state?: string;
+  country?: string;
+  lat?: number;
+  lon?: number;
+}
